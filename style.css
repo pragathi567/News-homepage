@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html{
+    font-size:15px;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    padding: 15px;
+}
+.navbar{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding-bottom: 16px;
+}
+.logo{
+    width:55px;
+    height: 40px;
+}
+.menu{
+    width:40px;
+    height: 30px;
+    cursor: pointer;
+}
+.nav-menu{
+    position: absolute;
+    background-color: hsl(36, 100%, 99%);
+    width: 260px;
+    bottom: 0;
+    top:0;
+    right: 0;
+    padding-top: 40px;
+    padding-left: 30px;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.close-icon{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 25px;
+    padding-bottom: 65px;
+    cursor: pointer;
+}
+.nav-menu li{
+    font-size: 18px;
+    margin: 20px 0;
+}
+.nav-menu li a{
+    color:  hsl(236, 13%, 42%);
+    font-weight: 600;
+    cursor: pointer;
+}
+.nav-menu li a:hover{
+   color: hsl(5, 85%, 63%);
+}
+.grid-container picture img{
+    width: 100%;
+}
+.heading{
+    font-size: 42px;
+    max-width: 300px;
+    color: hsl(240, 100%, 5%);
+    font-weight: 700;
+    margin: 12px 0;
+}
+
+.info p{
+    color:hsl(236, 13%, 42%);
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.info button{
+    background-color: hsl(5, 85%, 63%);
+    padding: 12px 36px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 0;
+    outline: 0;
+    margin-bottom: 56px;
+}
+.info button:hover{
+    background-color: hsl(240, 100%, 5%);
+}
+.new-info{
+    color: hsl(36, 100%, 99%);
+    background-color: hsl(240, 100%, 5%);
+    margin-bottom: 56px;
+    padding: 20px;
+}
+.new-info h2{
+    color: hsl(35, 77%, 62%);
+    font-size: 28px;
+}
+
+.new-info article{
+    margin-top: 30px;
+    border-bottom: 1px solid hsl(36, 100%, 99%);
+}
+.new-info article:nth-child(4){
+    border-bottom: none;
+}
+
+.new-info article p{
+    color: hsl(233, 8%, 79%);
+    margin-top: 10px;
+    margin-bottom: 28px;
+    font-size: 18px;
+    text-align: left;
+    line-height: 26px;
+}
+
+.items article{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    margin-bottom: 30px;
+    column-gap: 20px;
+}
+
+.items article img{
+    width: 100px;
+}
+
+.item-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.item-info span{
+    font-size: 28px;
+    color: hsl(233, 8%, 79%);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.item-info h4{
+    color: hsl(240, 100%, 5%);
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+.item-info h4:hover{
+    color: hsl(5, 85%, 63%);
+}
+.item-info p{
+    color: hsl(236, 13%, 42%);
+}
+
+@media (min-width:1024px){
+    body{
+       max-height: 100vh;
+        max-width: 1200px;
+        margin:auto;
+    }
+    .nav-menu{
+        width: 42%;
+        background-color: transparent;
+        position: absolute;
+        padding-top: 0;
+        margin-top: 20px;
+    }
+    .logo{
+        width: 65px;
+        height: 40px;
+    }
+    .nav-menu li{
+        display: inline-flex;
+        gap: 20px;
+        margin: 10px;
+    }
+    .menu{
+        display: none;
+    }
+    .close-icon{
+        display: none;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1.2fr .8fr;
+        column-gap: 2.5rem;
+    }
+    .box{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+    }
+    .info p{
+        color:hsl(236, 13%, 42%);
+        font-size: 15px;
+        max-width: 360px;
+        margin-top: 20px;
+    }
+    .heading{
+        font-size: 45px;
+    }
+    .info button{
+        margin-top: 20px;
+    }
+    .item-info p{
+        font-size: 16px;
+    }
+    .new-info article p{
+        margin-bottom: 18px;
+    }
+    .items{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 2rem;
+    }
+    .new-info article p{
+        font-size: 16px;
+    }
+}
+
